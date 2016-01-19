@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet">
+
+        <script type="text/javascript">
+            // Как только будет загружен API и готов DOM, выполняем инициализацию
+            ymaps.ready(init);
+
+            function init () {
+                // Создание экземпляра карты и его привязка к контейнеру с
+                // заданным id ("map")
+                var myMap = new ymaps.Map('map', {
+                    // При инициализации карты, обязательно нужно указать
+                    // ее центр и коэффициент масштабирования
+                    center: [56.326944, 44.0075], // Нижний Новгород
+                    zoom: 13
+                });
+
+                // Создание метки
+                var myPlacemark = new ymaps.Placemark(
+                        [56.326944, 44.0075],{
+                            hintContent: 'ООО "Global-ID"'
+                        }, {
+                            iconImageHref: 'images/geo-black.png', // картинка иконки
+                            iconImageSize: [70, 113], // размеры картинки
+                            iconImageOffset: [-35, -107] // смещение картинки
+                        }
+                );
+                // Добавление метки на карту
+                myMap.geoObjects.add(myPlacemark);
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <div class="container-fluid content">
+            <div class="header row">
+                <div class="col-xs-2 col-sm-1">
+                    <img src="images/logo.png" id="logo" title="Оборудование для систем безопасности" class="logo">
+                </div>
+                <div class="col-xs-offset-4 col-sm-offset-6 col-xs-6 col-sm-5 header-phone text-right">
+                    +7 (495) 241-95-46
+                    <button class="btn btn-black">Заказать звонок</button>
+                    <img src="images/gerb.png" class="" alt="Челябинск">
+                </div>
+            </div>
+            <div class="row menu">
+                <ul>
+                    <li class="active">Главная</li>
+                    <li>О компании</li>
+                    <li>Услуги</li>
+                    <li>Сертификаты</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid content" id="page-1">
+            <img src="images/slide-1.png" title="Слайд 1">
+        </div>
+        <div class="container-fluid content" id="page-2">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 text-center">
+                    <img src="images/services/service-1.png">
+                    <div class="service-title">Монтаж шлагбаумов</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 text-center">
+                    <img src="images/services/service-2.png">
+                    <div class="service-title">Монтаж турникетов</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 text-center">
+                    <img src="images/services/service-3.png">
+                    <div class="service-title">Проектирование
+                        и Монтаж систем
+                        Контроля доступа</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 text-center">
+                    <img src="images/services/service-4.png">
+                    <div class="service-title">Проектирование
+                        и Монтаж систем
+                        Видеонаблюдения</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 text-center">
+                    <img src="images/services/service-5.png">
+                    <div class="service-title">Проектирование
+                        и Монтаж систем
+                        Охранно-Пожарной
+                        сигнализации</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 text-center">
+                    <img src="images/services/service-6.png">
+                    <div class="service-title">Монтаж
+                        антикражных
+                        систем</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 text-center">
+                    &nbsp;
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <img src="images/services/service-7.png">
+                    <div class="service-title">Проектирование
+                        и Монтаж
+                        компьютерных
+                        сетей (СКС)</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid content black" id="page-4">
+            <div class="sub-title text-uppercase">Наши клиенты</div>
+            <p>
+            Наши клиенты - крупные корпоративные заказчики: банки и промышленные предприятия, государственные учреждения и иностранные компании, работающие на
+            территории России и стран СНГ, а также предприятия малого и среднего бизнеса. Многих клиентов и проекты компания привлекает по итогам тендеров, что свидетельствует
+            о высоком техническом уровне и экономической эффективности предлагаемых нами решений.
+            </p>
+            <div class="sub-title text-uppercase">Наша команда</div>
+            <p>
+            В штате компании работают опытные профессионалы. Благодаря этому мы гарантируем: высококвалифицированный технический уровень,экономическую эффективность
+            предлагаемых решений,полную надежность в долгосрочных взаимоотношениях с нашими клиентами и партнерами.Мы постоянно смотрим вперед, в будущее: совершенствуя
+            сервисы и запуская на рынок передовые услуги.
+            </p>
+            <div class="sub-title text-uppercase">Наши услуги</div>
+            <p>
+            Обширный опыт компании подтверждён множеством успешных комплексных проектов с применением передовых технологий и оборудования ведущих производителей.
+            Мы предлагаем полный спектр услуг под ключ, начиная от совместного анализа технических требований к проекту, до сервисного обслуживания
+            </p>
+            <ul class="media-list">
+                <li>установленных систем и оборудования: проектирование и монтаж оптических сетей; проектирование и монтаж структурированных кабельных систем (СКС);</li>
+                <li>проектирование и монтаж систем электропитания и освещения (СЭП);</li>
+                <li>проектирование и монтаж систем видеонаблюдения (CCTV);</li>
+                <li>проектирование и монтаж систем безопасности и контроля доступа (СКУД);</li>
+                <li>поставка и монтаж металлодетекторов, шлагбаумов и турникетов;</li>
+                <li>поставка оборудования для предлагаемых решений СКС, СЭП, СКУД и видеонаблюдения;</li>
+                <li>строительный ремонт и подготовка помещений;</li>
+                <li>монтаж оборудования на объектах заказчика;</li>
+                <li>уборка помещений после ремонта и монтажных работ;</li>
+                <li>строительный ремонт и подготовка помещений;</li>
+                <li>монтаж оборудования на объектах заказчика;</li>
+                <li>уборка помещений после ремонта и монтажных работ;</li>
+            </ul>
+        </div>
+        <div class="container-fluid content map">
+            <div id="map" style="height:400px"></div>
+        </div>
+        <footer class="container-fluid content" aria-label="footer">
+            <div class="title">КОНТАКТЫ</div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="manager">
+                        Менеджер: Дедушева Инесса <br />
+                        <span>+7 495 229 45 15 </span>
+                        доб.
+                        <span>33</span>
+                        <br />
+                        i.dedusheva@global-id.ru
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <form class="form">
+                        <div class="form-group">
+                            <label class="col-xs-3">Имя</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3">Телефон</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <textarea placeholder="Задайте вопрос" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
