@@ -15,8 +15,16 @@
     font-weight: normal;
     padding: 20px 40px;
 }
+.service-title{
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
 .black{
     color: #FEFEFE;
+}
+.white{
+    color: #1f2a2d;
 }
 .btn-black{
     background: #1b2326;
@@ -63,13 +71,21 @@
 #page-2{
     background: #eff5e7;
     min-height: 400px;
+    padding-top: 60px;
 }
 #page-1 img{
     max-width: 100%;
 }
+#page-3{
+    height: 400px;
+}
 #page-4{
     background: #1f2a2d;
     padding: 45px 170px 45px 170px;
+}
+#page-6{
+    background: url("../images/about.png");
+    height: 500px;
 }
 /*****************************************************/
 
@@ -86,4 +102,13 @@ footer form, footer form .form-group{
 }
 footer form{
     width: 350px;
+}
+
+.certificate{
+    width: 180px;
+    margin: 0 10px;
+}
+.brand{
+    /*width: 120px;*/
+    margin: 0 10px;
 }
