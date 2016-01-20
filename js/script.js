@@ -5,12 +5,39 @@ $(document).ready(function(){
         $(this).addClass('active');
     });
 
+    $('.service-item').click(function(){
+        if ($(this).children('.service-description').css('display') == 'none'){
+            $('.service-description').fadeOut();
+            $(this).children('.service-description').fadeIn();
+        }else{
+            $(this).children('.service-description').fadeOut();
+        }
+    });
+
+
     $(".fancybox").fancybox();
 
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel-1').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
+        responsive:{
+            0:{
+                items:4
+            },
+            600:{
+                items:6
+            },
+            1000:{
+                items:9
+            }
+        }
+    });
+
+    $('.owl-carousel-2').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
         responsive:{
             0:{
                 items:4
@@ -50,4 +77,5 @@ $(document).ready(function(){
     //});
 
     new WOW().init();
+
 });
