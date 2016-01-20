@@ -13,7 +13,7 @@
         <script src="js/script.js"></script>
         <script src="js/wow.min.js"></script>
 
-        <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+        <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/owl.carousel.css" rel="stylesheet">
@@ -53,14 +53,14 @@
     </head>
 
     <body id="top">
-        <div class="container-fluid content">
+        <div class="container-fluid content" id="header">
             <div class="header row">
                 <div class="col-xs-2 col-sm-1">
-                    <a href="/"><img src="images/logo.png" id="logo" title="Оборудование для систем безопасности" class="logo" style="width: 200px"></a>
+                    <a href="/"><img src="images/logo3.png" id="logo" title="Оборудование для систем безопасности" class="logo" style="width: 200px"></a>
                 </div>
-                <div class="col-xs-offset-4 col-sm-offset-6 col-xs-6 col-sm-5 header-phone text-right">
-                    +7 <span class="blue">(495)</span> 241-95-46
-                    <a href="#footer"><button class="btn btn-black">Заказать звонок</button></a>
+                <div class="col-xs-offset-2 col-sm-offset-4 col-xs-8 col-sm-7 header-phone text-right">
+                    <span style="padding-right: 20px">+7 <span class="blue">(495)</span> 241-95-46</span>
+                    <a href="#footer"><button class="btn btn-blue">Заказать звонок</button></a>
                     <!--<img src="images/gerb.png" class="" alt="Челябинск">-->
                 </div>
             </div>
@@ -191,29 +191,40 @@
             </div>
         </div>
         <div class="container-fluid content black" id="page-6">
-
+            <div class="row" style="margin-top: 140px">
+                <div class="col-xs-offset-2 col-xs-8 wow fadeInUp">
+                    <div class="title">О компании</div>
+                    <p style="margin-top: 50px">
+                        Компания ООО «Глобал-АйДи» <br />
+                        уже много лет является одним из российских <br />
+                        лидеров в области проектирования, монтажа <br />
+                        и обслуживания систем безопасности, а также <br />
+                        средств связи для корпоративных клиентов.
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="container-fluid content black" id="page-4">
             <div class="row">
                 <div class="col-sm-offset-2 col-xs-offset-1 col-sm-8 col-xs-10">
-                    <div class="sub-title text-uppercase">Наши клиенты</div>
-                    <p>
+                    <div class="sub-title text-uppercase  wow bounceInUp" data-wow-delay="0.1">Наши клиенты</div>
+                    <p class="  wow bounceInUp"  data-wow-delay="0.2">
                         Наши клиенты - крупные корпоративные заказчики: банки и промышленные предприятия, государственные учреждения и иностранные компании, работающие на
                         территории России и стран СНГ, а также предприятия малого и среднего бизнеса. Многих клиентов и проекты компания привлекает по итогам тендеров, что свидетельствует
                         о высоком техническом уровне и экономической эффективности предлагаемых нами решений.
                     </p>
-                    <div class="sub-title text-uppercase">Наша команда</div>
-                    <p>
+                    <div class="sub-title text-uppercase  wow bounceInUp" data-wow-delay="0.6">Наша команда</div>
+                    <p class="  wow bounceInUp" data-wow-delay="0.7">
                         В штате компании работают опытные профессионалы. Благодаря этому мы гарантируем: высококвалифицированный технический уровень,экономическую эффективность
                         предлагаемых решений,полную надежность в долгосрочных взаимоотношениях с нашими клиентами и партнерами.Мы постоянно смотрим вперед, в будущее: совершенствуя
                         сервисы и запуская на рынок передовые услуги.
                     </p>
-                    <div class="sub-title text-uppercase">Наши услуги</div>
-                    <p>
+                    <div class="sub-title text-uppercase  wow bounceInUp" data-wow-delay="1">Наши услуги</div>
+                    <p class="  wow bounceInUp" data-wow-delay="1.1">
                         Обширный опыт компании подтверждён множеством успешных комплексных проектов с применением передовых технологий и оборудования ведущих производителей.
                         Мы предлагаем полный спектр услуг под ключ, начиная от совместного анализа технических требований к проекту, до сервисного обслуживания
                     </p>
-                    <ul class="media-list">
+                    <ul class="media-list wow bounceInUp"  data-wow-delay="2">
                         <li>установленных систем и оборудования: проектирование и монтаж оптических сетей; проектирование и монтаж структурированных кабельных систем (СКС);</li>
                         <li>проектирование и монтаж систем электропитания и освещения (СЭП);</li>
                         <li>проектирование и монтаж систем видеонаблюдения (CCTV);</li>
@@ -234,14 +245,15 @@
             <div id="map" style="height:400px"></div>
         </div>
         <footer class="container-fluid content" aria-label="footer" id="footer">
-            <div class="title">КОНТАКТЫ</div>
+            <div class="title text-center">КОНТАКТЫ</div>
             <div class="row">
-                <div class="col-xs-12 col-sm-6 left-footer wow bounceInLeft">
+                <div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-5 left-footer wow bounceInLeft">
                     <div class="media">
                         <div class="media-left">
                             <img src="images/manager.png" title="Менеджер" alt="Менеджер">
                         </div>
                         <div class="media-body">
+                            <br />
                             <div class="manager black">
                                 Менеджер: Дедушева Инесса <br />
                                 <span class="footer-phone">+7 <span class="blue">495</span> 229 45 15 </span>
@@ -253,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 wow bounceInRight">
+                <div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-5 wow bounceInRight">
                     <form class="form">
                         <div class="form-group">
                             <label class="col-xs-3">Имя</label>
@@ -270,6 +282,11 @@
                         <div class="form-group">
                             <div class="col-xs-12">
                                 <textarea placeholder="Задайте вопрос" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 text-right">
+                                <button class="btn btn-blue" type="submit">Заказать</button>
                             </div>
                         </div>
                     </form>
