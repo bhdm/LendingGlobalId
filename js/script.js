@@ -20,23 +20,21 @@ $(document).ready(function(){
     });
 
     // Анимация
-    var h = $(window).height();
-
-    $('#page-2 div div').addClass('animated zoomIn');
     //var h = $(window).height();
+    //
+    //$('#page-2 div div').addClass('animated zoomIn');
+    //
     //$(window).scroll(function(){
-    //    if ( ($(this).scrollTop()+h) >= $("#ex2").offset().top) {...}
-    //}
+    //    if ( ($(this).scrollTop()+h) >= ($('footer').offset().top)) {
+    //        $("footer .row>div").css({visibility:"visible"});
+    //        $("footer .row>div").eq(0).addClass('animated bounceInLeft');
+    //        $("footer .row>div").eq(1).addClass('animated bounceInRight');
+    //    }
+    //
+    //    if ( ($(this).scrollTop()+h) >= $("#page-4").offset().top) {
+    //        $("#page-4 .row").eq(0).addClass('animated rotateIn');
+    //    }
+    //});
 
-    $(window).scroll(function(){
-        if ( ($(this).scrollTop()+h) >= ($('footer').offset().top)) {
-            $("footer .row>div").css({visibility:"visible"});
-            $("footer .row>div").eq(0).addClass('animated bounceInLeft');
-            $("footer .row>div").eq(1).addClass('animated bounceInRight');
-        }
-
-        if ( ($(this).scrollTop()+h) >= $("#page-4").offset().top) {
-            $("#page-4 .row").eq(0).addClass('animated rotateIn');
-        }
-    });
+    new WOW().init();
 });
