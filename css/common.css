@@ -82,13 +82,27 @@ h1,h2,.title,.sub-title, .service-title{
     margin: 0 auto;
     padding: 0;
 }
-.menu ul li{
+.navbar-nav li{
     display: inline-block;
     color: #FEFEFE;
     font-size: 18px;
-    padding: 19px 70px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-.menu ul li.active{
+.navbar-nav li a{
+    color: #FEFEFE;
+}
+.navbar-nav li.active{
+    background: inherit;
+}
+.navbar-nav li.active a:hover{
+    color: #08c5ea;
+}
+.navbar-nav li.active a{
+    color: #08c5ea;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: inherit;
     color: #08c5ea;
 }
 
@@ -116,11 +130,15 @@ h1,h2,.title,.sub-title, .service-title{
     max-width: 100%;
 }
 #page-3{
-    height: 400px;
+    /*height: 400px;*/
 }
 #page-4{
     background: #1f2a2d;
-    padding: 45px 0px 45px 0px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+#page-5{
+    margin-bottom: 5px;
 }
 #page-6{
     background: url("../images/about.png");
@@ -173,4 +191,11 @@ footer form{
         margin-top: 20px;
     }
 
+}
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-black{
+    background: #1b2326;
 }
