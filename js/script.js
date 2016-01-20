@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    $('.navbar-nav li').click(function(){
+        $('.navbar-nav li.active').removeClass('active');
+        $(this).addClass('active');
+    });
+
     $(".fancybox").fancybox();
 
     $('.owl-carousel').owlCarousel({
@@ -24,7 +29,15 @@ $(document).ready(function(){
     //
     //$('#page-2 div div').addClass('animated zoomIn');
     //
-    //$(window).scroll(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 60){
+            $('#menu').addClass('menuFixed');
+            $('#logo2').fadeIn();
+        }else{
+            $('#menu').removeClass('menuFixed');
+            $('#logo2').css('display','none')
+        }
+    })
     //    if ( ($(this).scrollTop()+h) >= ($('footer').offset().top)) {
     //        $("footer .row>div").css({visibility:"visible"});
     //        $("footer .row>div").eq(0).addClass('animated bounceInLeft');
