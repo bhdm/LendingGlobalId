@@ -1,11 +1,14 @@
 $(document).ready(function(){
+
+    $(".fancybox").fancybox();
+
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
         responsive:{
             0:{
-                items:1
+                items:4
             },
             600:{
                 items:6

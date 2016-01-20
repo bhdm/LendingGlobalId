@@ -120,7 +120,7 @@ h1,h2,.title,.sub-title, .service-title{
 }
 #page-4{
     background: #1f2a2d;
-    padding: 45px 170px 45px 170px;
+    padding: 45px 0px 45px 0px;
 }
 #page-6{
     background: url("../images/about.png");
@@ -150,4 +150,27 @@ footer form{
 .brand{
     /*width: 120px;*/
     margin: 0 10px;
+}
+.owl-stage{
+    margin: 0 auto;
+}
+.footer-phone{
+    font-size: 25px;
+}
+.manager{
+    font-size: 17px;
+    padding-top: 15px;
+}
+.left-footer{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 920px) {
+    .btn-black{
+        margin-bottom: 20px;
+    }
+    #logo{
+        margin-top: 20px;
+    }
+
 }
