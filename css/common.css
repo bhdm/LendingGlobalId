@@ -126,7 +126,9 @@ h1,h2,.title,.sub-title, .service-title{
 }
 #page-1{
     padding: 0;
+    position: relative;
 }
+
 #page-2{
     background: #eff5e7;
     min-height: 400px;
@@ -173,6 +175,7 @@ footer form{
 }
 .brand{
     /*width: 120px;*/
+    height: 75px;
     margin: 0 10px;
 }
 .owl-stage{
