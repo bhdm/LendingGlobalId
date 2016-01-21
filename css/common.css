@@ -118,11 +118,14 @@ nav .container-fluid{
     padding: 0 !important;
 }
 .navbar-nav li{
-    background: url("../images/menu-bg-1.png");
+    /*background: url("../images/menu-bg-1.png");*/
+    background: rgba(255,255,255,0.5);
 }
 .navbar-nav li.active{
     /*background: inherit;*/
-    background: url("../images/menu-bg-2.png");
+    /*background: url("../images/menu-bg-2.png");*/
+    background: rgba(255,255,255,0.3);
+    color: #FEFEFE;
 }
 .navbar-nav li.active a:hover{
     color: #FEFEFE;
@@ -131,13 +134,17 @@ nav .container-fluid{
     color: #FEFEFE;
 }
 .nav>li>a:focus, .nav>li>a:hover{
-    background-color: inherit;
+    background: none;
+    color: #FEFEFE;
+}
+.nav>li:focus, .nav>li:hover{
+    background: rgba(255,255,255,0.5);
     color: #FEFEFE;
 }
 
 .menu ul li:hover{
     color: #08c5ea;
-    cursor: FEFEFE;
+    background: #FEFEFE;
 }
 
 .menu ul li:not(:last-child){
@@ -211,7 +218,7 @@ footer form{
 }
 .manager{
     font-size: 17px;
-    padding-top: 15px;
+    /*padding-top: 15px;*/
 }
 .left-footer{
     margin-bottom: 20px;
@@ -280,7 +287,7 @@ footer form{
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: -1px;
     z-index: 150;
     /*background: #FEFEFE;*/
 }
@@ -419,4 +426,11 @@ p{
 }
 #bs-example-navbar-collapse-1{
     padding: 0 !important;
+}
+
+@media (min-width: 768px) {
+    #bottomline{
+        margin-top: 20px;
+        border-right: 2px dotted #FEFEFE;
+    }
 }

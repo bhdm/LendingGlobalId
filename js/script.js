@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $('.navbar-nav li').click(function(){
         $('.navbar-nav li.active').removeClass('active');
         $(this).addClass('active');
@@ -78,6 +77,14 @@ $(document).ready(function(){
             $('#logo2').css('display','none')
         }
 
+        if (($(this).scrollTop() > 1310 && $(this).scrollTop() < 2520) || $(this).scrollTop() > 3910){
+            //Если на белом
+            $('.navbar-nav li').animate({backgroundColor :'rgba(0,0,0,0.5)'},0);
+            $('.navbar-nav li.active').animate({backgroundColor :'rgba(0,0,0,0.3)'},0);
+        }else{
+            $('.navbar-nav li').animate({backgroundColor :'rgba(255,255,255,0.5)'},0);
+            $('.navbar-nav li.active').animate({backgroundColor :'rgba(255,255,255,0.3)'},0);
+        }
 
         if ($(this).scrollTop() < 250 ){
             $('#ch-2').addClass('fadeOutUp');
