@@ -148,6 +148,7 @@ h1,h2,.title,.sub-title, .service-title{
 }
 #page-1 img{
     max-width: 100%;
+    margin-bottom: 30px;
 }
 #page-3{
     /*height: 400px;*/
@@ -367,4 +368,24 @@ p{
 .service-txt{
     height: 294px;
     overflow: hidden;
+}
+
+.show{
+    display: block;
+    opacity: 1;
+    transition: opacity 0.4s ease-out, display 0.4s step-start;
+    -ms-transition: opacity 0.4s ease-out, display 0.4s step-start;
+    -moz-transition: opacity 0.4s ease-out, display 0.4s step-start;
+    -webkit-transition: opacity 0.4s ease-out, display 0.4s step-start;
+}
+.hide{
+    opacity: 0;
+    display: none;
+    transition: opacity 0.4s ease-in, display 0.4s step-end;
+    -ms-transition: opacity 0.4s ease-in, display 0.4s step-end;
+    -moz-transition: opacity 0.4s ease-in, display 0.4s step-end;
+    -webkit-transition: opacity 0.4s ease-in, display 0.4s step-end;
+}
+#ch-2,#ch-3{
+    display: none;
 }
