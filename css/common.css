@@ -227,6 +227,11 @@ footer form{
         border-right: 0 !important;
     }
 }
+@media (max-width: 500px) {
+    .header-phone{
+        font-size: 18px;
+    }
+}
 .navbar-nav{
     width: 100%;
 }
@@ -333,6 +338,26 @@ p{
     height: 647px;
     overflow: hidden;
 }
+.service-description-bootom{
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    background: #FEFEFE;
+    display: none;
+    padding: 55px 10px 10px 10px ;
+    border-top: 5px solid #1f2a2d;
+    height: 647px;
+    overflow: hidden;
+}
+.service-bottom{
+    top: -354px;
+}
 .service-item{
     position: relative;
+}
+.service-txt{
+    height: 294px;
+    overflow: hidden;
 }
