@@ -63,8 +63,14 @@ $(document).ready(function(){
     //}, 5000);
 
 
+    var virtualScrol = 0;
+
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 60){
+        if ($(this).scrollTop() < 750) {
+            $('body').css('marginTop', $(this).scrollTop());
+        }
+
+        if ($(this).scrollTop() > 810){
             $('#menu').addClass('menuFixed');
             $('#logo2').fadeIn();
         }else{
@@ -72,7 +78,8 @@ $(document).ready(function(){
             $('#logo2').css('display','none')
         }
 
-        if ($(this).scrollTop() < 60 ){
+
+        if ($(this).scrollTop() < 250 ){
             $('#ch-2').addClass('fadeOutUp');
             $('#ch-2').removeClass('fadeInUp');
             $('#ch-3').addClass('fadeOutUp');
@@ -82,9 +89,9 @@ $(document).ready(function(){
             $('#ch-1').css('display','block');
             $('#ch-2').css('display','none');
             $('#ch-3').css('display','none');
-            console.log('1');
+
         }else{
-            if($(this).scrollTop() >= 60 && $(this).scrollTop() < 140){
+            if($(this).scrollTop() >= 250 && $(this).scrollTop() < 500){
                 $('#ch-3').addClass('fadeOutUp');
                 $('#ch-3').removeClass('fadeInUp');
                 $('#ch-2').addClass('fadeInUp');
@@ -94,7 +101,7 @@ $(document).ready(function(){
                 $('#ch-1').css('display','none');
                 $('#ch-2').css('display','block');
                 $('#ch-3').css('display','none');
-                console.log('2');
+
             }else{
                 $('#ch-3').addClass('fadeInUp');
                 $('#ch-3').removeClass('fadeOutUp');
@@ -105,7 +112,7 @@ $(document).ready(function(){
                 $('#ch-1').css('display','none');
                 $('#ch-2').css('display','none');
                 $('#ch-3').css('display','block');
-                console.log('3');
+
             }
         }
 
