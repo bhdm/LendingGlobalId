@@ -15,7 +15,7 @@
 
 body{
     overflow-x: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 *{
     font-family: 'HelveticaNeue-Light';
@@ -92,6 +92,8 @@ h1,h2,.title,.sub-title, .service-title{
     height: 65px;
     background: #FEFEFE;
 }
+#menu{
+}
 .menu ul{
     max-width: 1200px;
     display: block;
@@ -109,25 +111,33 @@ h1,h2,.title,.sub-title, .service-title{
     border-right: 1px solid #555;
 }
 .navbar-nav li a{
-    color: #555;
+    color: #333;
+    font-weight: bold;
+}
+nav .container-fluid{
+    padding: 0 !important;
+}
+.navbar-nav li{
+    background: url("../images/menu-bg-1.png");
 }
 .navbar-nav li.active{
-    background: inherit;
+    /*background: inherit;*/
+    background: url("../images/menu-bg-2.png");
 }
 .navbar-nav li.active a:hover{
-    color: #08c5ea;
+    color: #FEFEFE;
 }
 .navbar-nav li.active a{
-    color: #08c5ea;
+    color: #FEFEFE;
 }
 .nav>li>a:focus, .nav>li>a:hover{
     background-color: inherit;
-    color: #08c5ea;
+    color: #FEFEFE;
 }
 
 .menu ul li:hover{
     color: #08c5ea;
-    cursor: pointer;
+    cursor: FEFEFE;
 }
 
 .menu ul li:not(:last-child){
@@ -140,6 +150,7 @@ h1,h2,.title,.sub-title, .service-title{
 #page-1{
     padding: 0;
     position: relative;
+    /*margin-top: -175px;*/
 }
 
 #page-2{
@@ -226,13 +237,24 @@ footer form{
         text-align: left !important;
         width: 100% !important;
         border-right: 0 !important;
+        background: #FEFEFE !important;
+        padding-left: 30px !important;
     }
     .page-1-content{
-        top: 0 !important;
+        top: 120px !important;
         left: 0 !important;
         right: 0 !important;
         text-align: center !important;
         margin-left: 0 !important;
+    }
+    #bs-example-navbar-collapse-1{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .page-1-content{
+        top: 160px !important;
     }
 }
 @media (max-width: 500px) {
@@ -258,9 +280,9 @@ footer form{
     position: fixed;
     left: 0;
     right: 0;
-    top:0;
+    top: 0;
     z-index: 150;
-    background: #FEFEFE;
+    /*background: #FEFEFE;*/
 }
 .icon-bar{
     background: #FEFEFE;
@@ -281,7 +303,7 @@ a .btn-black{
     width: 100%;
     left: 50%;
     margin-left: -300px;
-    top: 50px;
+    top: 250px;
     text-align: center;
 }
 .page-1-content img {
@@ -308,7 +330,7 @@ p{
     font-size: 16px;
 }
 .header{
-    background: #1f2a2d;
+    /*background: #1f2a2d;*/
 }
 .page-6-content{
     margin-left: 150px;
@@ -388,4 +410,13 @@ p{
 }
 #ch-2,#ch-3{
     display: none;
+}
+.absolute-top{
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+#bs-example-navbar-collapse-1{
+    padding: 0 !important;
 }

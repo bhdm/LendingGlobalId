@@ -70,7 +70,7 @@ $(document).ready(function(){
             $('body').css('marginTop', $(this).scrollTop());
         }
 
-        if ($(this).scrollTop() > 810){
+        if ($(this).scrollTop() > 60){
             $('#menu').addClass('menuFixed');
             $('#logo2').fadeIn();
         }else{
