@@ -434,3 +434,67 @@ p{
         border-right: 2px dotted #FEFEFE;
     }
 }
+.lr-menu{
+    position: relative;
+}
+.lr-item-left{
+    position: absolute;
+    left: 0;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.5);
+    color: #FEFEFE;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 50;
+}
+.lr-item-right{
+    position: absolute;
+    right: 0;
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.5);
+    color: #FEFEFE;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 50;
+}
+.lr-1{
+    top: 220px;
+}
+.lr-2{
+    top: 350px;
+}
+.lr-3{
+    top: 380px;
+}
+.lr-title {
+    color: #FEFEFE;
+}
+.lr-item-left .lr-title {
+    float: right;
+    padding-left: 20px;
+    display: inline-block;
+    padding-top: 8px;
+    width: 375px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.lr-item-right .lr-title {
+    float: left;
+    padding-right: 20px;
+    display: inline-block;
+    padding-top: 8px;
+    width: 375px;
+    cursor: pointer;
+    /*text-align: right;*/
+}
+.lr-item-right:hover, .lr-item-left:hover{
+    background: rgba(255,255,255,0.3);
+    color: #222;
+}
+.lr-item-right:hover .lr-title, .lr-item-left:hover .lr-title{
+    color: #222;
+}
+.lr-icon{
+    width: 42px;
+}

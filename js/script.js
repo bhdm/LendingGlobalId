@@ -14,6 +14,7 @@ $(document).ready(function(){
     });
 
 
+
     $(".fancybox").fancybox();
 
     $('.owl-carousel-1').owlCarousel({
