@@ -80,11 +80,13 @@ $(document).ready(function(){
 
         if (($(this).scrollTop() > 1310 && $(this).scrollTop() < 2520) || $(this).scrollTop() > 3910){
             //Если на белом
-            $('.navbar-nav li').animate({backgroundColor :'rgba(0,0,0,0.5)'},0);
-            $('.navbar-nav li.active').animate({backgroundColor :'rgba(0,0,0,0.3)'},0);
+            $('.navbar-nav li').animate({backgroundColor :'rgba(0,0,0,0.7)'},0);
+            $('.navbar-nav li.active').animate({backgroundColor :'rgba(0,0,0,0.5)'},0);
+            $('.navbar-nav li a').css('color','#FEFEFE')
         }else{
             $('.navbar-nav li').animate({backgroundColor :'rgba(255,255,255,0.5)'},0);
             $('.navbar-nav li.active').animate({backgroundColor :'rgba(255,255,255,0.3)'},0);
+            $('.navbar-nav li a').css('color','#222')
         }
 
         if ($(this).scrollTop() < 250 ){
@@ -174,4 +176,8 @@ $(document).ready(function(){
 
     new WOW().init();
 
+    $('.dialog').click(function(){
+        $('#dialog').modal();
+        return false;
+    });
 });

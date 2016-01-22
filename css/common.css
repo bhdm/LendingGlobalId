@@ -20,7 +20,7 @@ body{
 *{
     font-family: 'HelveticaNeue-Light';
 }
-h1,h2,.title,.sub-title, .service-title{
+h1,h2,.title,.sub-title, .service-title, .modal-title{
     font-family: 'HelveticaNeue-Thin';
 }
 
@@ -71,6 +71,21 @@ h1,h2,.title,.sub-title, .service-title{
     color: #FEFEFE;
 }
 .btn-black:hover{
+    color: #FEFEFE;
+    background: #1f2a2d;
+}
+
+.btn-black-big{
+    background: #1b2326;
+    color: #FEFEFE;
+    padding: 15px 30px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -68px;
+}
+.btn-black-big:hover{
     color: #FEFEFE;
     background: #1f2a2d;
 }
@@ -288,7 +303,7 @@ footer form{
     left: 0;
     right: 0;
     top: -1px;
-    z-index: 150;
+    z-index: 999;
     /*background: #FEFEFE;*/
 }
 .icon-bar{
@@ -345,7 +360,7 @@ p{
 .owl-prev{
     position: absolute;
     top: 80px;
-    left: 0;
+    left: -45px;
     background: url("../images/ar-left.png");
     width: 20px;
     height: 37px;
@@ -353,7 +368,7 @@ p{
 .owl-next{
     position: absolute;
     top: 80px;
-    right: 0;
+    right: -45px;
     background: url("../images/ar-right.png");
     width: 20px;
     height: 37px;
@@ -367,7 +382,7 @@ p{
     top: -60px;
     left: 0px;
     right: 0px;
-    z-index: 100;
+    z-index: 97;
     background: #FEFEFE;
     display: none;
     padding: 55px 10px 10px 10px ;
@@ -380,7 +395,7 @@ p{
     top: -60px;
     left: 0px;
     right: 0px;
-    z-index: 100;
+    z-index: 97;
     background: #FEFEFE;
     display: none;
     padding: 55px 10px 10px 10px ;
@@ -440,7 +455,7 @@ p{
 .lr-item-left{
     position: absolute;
     left: 0;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background: rgba(0,0,0,0.5);
     color: #FEFEFE;
     font-size: 20px;
@@ -450,7 +465,7 @@ p{
 .lr-item-right{
     position: absolute;
     right: 0;
-    padding: 15px 20px;
+    padding: 20px 20px;
     background: rgba(0,0,0,0.5);
     color: #FEFEFE;
     font-size: 20px;
@@ -461,7 +476,7 @@ p{
     top: 220px;
 }
 .lr-2{
-    top: 350px;
+    top: 400px;
 }
 .lr-3{
     top: 380px;
@@ -474,7 +489,7 @@ p{
     padding-left: 20px;
     display: inline-block;
     padding-top: 8px;
-    width: 375px;
+    width: 250px;
     text-align: right;
     cursor: pointer;
 }
@@ -484,7 +499,7 @@ p{
     padding-right: 20px;
     display: inline-block;
     padding-top: 8px;
-    width: 375px;
+    width: 250px;
     cursor: pointer;
     /*text-align: right;*/
 }
@@ -497,4 +512,64 @@ p{
 }
 .lr-icon{
     width: 42px;
+    padding-top: 10px;
+}
+.owl-carousel-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.modal-content{
+    background: #3A3939;
+}
+.modal-content>*{
+    color: #CACACA;
+}
+.modal-footer{
+    border-top: none;
+}
+.close span{
+    color: #CACACA;
+}
+.close{
+    opacity: 1;
+}
+.modal-backdrop{
+    background-color: #FEFEFE;
+}
+label{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+.service-description .service-d{
+    position: relative;
+    height: 570px;
+    overflow: hidden;
+    color: #222;
+}
+
+.service-description .service-d{
+    position: relative;
+    color: #222;
+}
+.service-p .btn-black-big{
+    top: 10px;
+    bottom: auto;
 }

@@ -5,6 +5,7 @@
 
         <script src="js/jquery-1.12.0.min.js"></script>
         <script src="js/bg.js"></script>
+        <script src="js/jquery.inputmask.bundle.min.js"></script>
 
         <script src="js/bootstrap.min.js"></script>
         <script src="js/scroll.js"></script>
@@ -60,22 +61,22 @@
             <div class="lr-menu hidden-sm">
                 <div class="lr-item-left lr-1 wow fadeInLeftBig" data-wow-delay="1s">
                     <img src="images/icon/icon-1-white.png" class="lr-icon">
-                    <a href="#footer"><div class="lr-title">МОНТАЖ ШЛАГБАУМОВ</div></a>
+                    <a href="#footer" class="dialog"><div class="lr-title">МОНТАЖ <br />ШЛАГБАУМОВ</div></a>
                 </div>
                 <div class="lr-item-left lr-2 wow fadeInLeftBig" data-wow-delay="1.3s">
                     <img src="images/icon/icon-2-white.png" class="lr-icon">
-                    <a href="#footer"><div class="lr-title">МОНТАЖ ТУРНИКЕТОВ</div></a>
+                    <a href="#footer" class="dialog"><div class="lr-title">МОНТАЖ <br />ТУРНИКЕТОВ</div></a>
                 </div>
                 <div class="lr-item-right lr-1 wow fadeInRightBig" data-wow-delay="1s">
-                    <a href="#footer"><div class="lr-title">МОНТАЖ ВИДЕОНАБЛЮДЕНИЯ</div></a>
+                    <a href="#footer" class="dialog"><div class="lr-title">МОНТАЖ <br />ВИДЕОНАБЛЮДЕНИЯ</div></a>
                     <img src="images/icon/icon-3-white.png" class="lr-icon">
                 </div>
                 <div class="lr-item-right lr-2 wow fadeInRightBig" data-wow-delay="1.3s">
-                    <a href="#footer"><div class="lr-title">Монтаж СКУД</div></a>
-                    <img src="images/icon/icon-4-white.png" class="lr-icon">
+                    <a href="#footer" class="dialog"><div class="lr-title" style="line-height: 72px">Монтаж СКУД</div></a>
+                    <img src="images/icon/icon-4-white.png" class="lr-icon" style="padding-top: 18px;">
                 </div>
             </div>
-            <img src="images/slide-1-1.png" title="Слайд 1">
+            <img src="images/slide-1-2.png" title="Слайд 1">
             <div class="page-1-content wow fadeInUp" data-wow-delay="0.5s">
                 <img src="images/gerb2.png" class="main-gerb hidden-xs" style="margin-bottom: 30px;">
                 <!--<div class="first-title">МОНТАЖНЫЕ УСЛУГИ В <br />ЧЕЛЯБИНСКЕ</div>-->
@@ -89,12 +90,12 @@
             <div class="container-fluid content" id="header">
             <div class="header row">
                 <div class="col-xs-2 col-sm-1">
-                    <a href="/"><img src="images/logo3.png" id="logo" title="Оборудование для систем безопасности" class="logo" style="width: 200px"></a>
+                    <a href="/"><img src="images/logo4.png" id="logo" title="Оборудование для систем безопасности" class="logo" style="width: 200px"></a>
                 </div>
                 <div class="col-xs-offset-2 col-sm-offset-4 col-xs-8 col-sm-7 header-phone text-right">
                     <span class="hidden-xs" style="font-size: 18px">Диспетчер:</span>
                     <span style="padding-right: 0px">+7 <span class="blue">(495)</span> 241-95-46</span>
-                    <a href="#footer"><button class="btn btn-blue">Заказать звонок</button></a>
+                    <a href="#footer" class="dialog"><button class="btn btn-blue">Заказать звонок</button></a>
                     <!--<img src="images/gerb.png" class="" alt="Челябинск">-->
                 </div>
             </div>
@@ -133,43 +134,58 @@
                     <img src="images/services/service-1.png" class="service-image wow fadeInUp " data-wow-delay="0.1s" >
                     <div class="service-title">Монтаж шлагбаумов</div>
                     <div class="service-description">
-                        <img src="images/services/service-1.png" class="service-image" >
-                        <div class="service-title">Монтаж шлагбаумов</div>
-                        Наш опыт работы и практика использования шлагбаумов показали, что правильно установленный шлагбаум - это залог долгой эксплуатации.<br />
-                        Нами установлены шлагбаумы на территории промышленных предприятий и административных зданий, различных учреждений и заведений, аэропортов и городских парковок. Грамотный расчет и подбор оборудования вместе с профессионально выполненным монтажом обеспечивают его беспроблемную эксплуатацию на любых объектах.<br />
-                        Мы готовы выполнить установку отдельных шлагбаумов на территории конкретного объекта или разработать комплексные решения для обеспечения контролируемого проезда с нужными режимами работы и другими параметрами.<br />
+                        <div class="service-d">
+                            <img src="images/services/service-1.png" class="service-image" >
+                            <div class="service-title">Монтаж шлагбаумов</div>
+                            Наш опыт работы и практика использования шлагбаумов показали, что правильно установленный шлагбаум - это залог долгой эксплуатации.<br />
+                            Нами установлены шлагбаумы на территории промышленных предприятий и административных зданий, различных учреждений и заведений, аэропортов и городских парковок. Грамотный расчет и подбор оборудования вместе с профессионально выполненным монтажом обеспечивают его беспроблемную эксплуатацию на любых объектах.<br />
+                            <br />
+                            <button type="button" class="btn btn-black-big dialog">Заказать</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3 text-center service-item">
                     <img src="images/services/service-2.png" class="service-image wow fadeInUp" data-wow-delay="0.2s" >
                     <div class="service-title">Монтаж турникетов</div>
                     <div class="service-description">
-                        <img src="images/services/service-2.png" class="service-image">
-                        <div class="service-title">Монтаж турникетов</div>
-                        Наша компания может предложить как отдельные виды этих устройств, так и комплексные решения с полным комплектом необходимого оборудования для повышения общего уровня безопасности. Мы устанавливаем надежные и функциональные турникеты российского производства PERCo, Praktika, ОМА и других брендов, которые отлично себя зарекомендовали в СКУД разных модификаций.<br />
-                        При выборе турникетов наши специалисты учитывают специфику конкретного объекта и интенсивность проходимости людей, места установки этих устройств и регулярность их использования, обеспечиваемый уровень защиты от несанкционированного проникновения.
+                        <div class="service-d">
+                            <img src="images/services/service-2.png" class="service-image">
+                            <div class="service-title">Монтаж турникетов</div>
+                            Наша компания может предложить как отдельные виды этих устройств, так и комплексные решения с полным комплектом необходимого оборудования для повышения общего уровня безопасности. Мы устанавливаем надежные и функциональные турникеты российского производства PERCo, Praktika, ОМА и других брендов, которые отлично себя зарекомендовали в СКУД разных модификаций.<br />
+                            При выборе турникетов наши специалисты учитывают специфику конкретного объекта и интенсивность проходимости людей, места установки этих устройств и регулярность их использования, обеспечиваемый уровень защиты от несанкционированного проникновения.
+                            <br />
+                            <button type="button" class="btn btn-black-big dialog">Заказать</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3 text-center service-item">
                     <img src="images/services/service-3.png" class="service-image wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-title">Проектирование и Монтаж систем Контроля доступа</div>
                     <div class="service-description">
-                        <img src="images/services/service-3.png" class="service-image " >
-                        <div class="service-title">Проектирование и Монтаж систем Контроля доступа</div>
-                        Наши специалисты профессионально разбираются в новейших системах видеонаблюдения и выполняют их монтаж с учетом всех требований. Опытные мастера осуществляют монтаж видеонаблюдения для контроля самих объектов и прилегающей к ним территории.<br />
-                        Мы работаем как с частными клиентами, так и с крупными корпорациями, в каждом конкретном случае предлагая наиболее эффективное и экономически целесообразное решение проблемы с обеспечением безопасности. Установленные нами системы эксплуатируются уже не первый год и полностью справляются со своими задачами.<br />
-                        Благодаря грамотному расположению наши системы видеонаблюдения обеспечивают полный обзор без «слепых зон».<br />
+                        <div class="service-d">
+                            <img src="images/services/service-3.png" class="service-image " >
+                            <div class="service-title">Проектирование и Монтаж систем Контроля доступа</div>
+                            Наши специалисты профессионально разбираются в новейших системах видеонаблюдения и выполняют их монтаж с учетом всех требований. Опытные мастера осуществляют монтаж видеонаблюдения для контроля самих объектов и прилегающей к ним территории.<br />
+                            Мы работаем как с частными клиентами, так и с крупными корпорациями, в каждом конкретном случае предлагая наиболее эффективное и экономически целесообразное решение проблемы с обеспечением безопасности. Установленные нами системы эксплуатируются уже не первый год и полностью справляются со своими задачами.<br />
+                            Благодаря грамотному расположению наши системы видеонаблюдения обеспечивают полный обзор без «слепых зон».<br />
+                            <br />
+                            <button type="button" class="btn btn-black-big dialog">Заказать</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3 text-center service-item">
                     <img src="images/services/service-4.png" class="service-image wow fadeInUp" data-wow-delay="0.4s">
                     <div class="service-title">Проектирование и Монтаж систем Видеонаблюдения</div>
                     <div class="service-description">
-                        <img src="images/services/service-4.png" class="service-image">
-                        <div class="service-title">Проектирование и Монтаж систем Видеонаблюдения</div>
-                        Мы занимается проектированием и установкой СКУД (систем контроля управления доступом). Мы оказываем весь спектр услуг – от разработки проекта с учетом конкретных требований до программирования и установки оборудования.<br />
-                        Установленные нами СКУД успешно эксплуатируются в офисных центрах и учебных заведениях, на производственных предприятиях и в финансовых учреждениях. Наличие систем контроля и управления доступом свидетельствует о качестве предприятия.<br />
-                        В каждом конкретном случае наши монтажники учитывают целый ряд факторов и подбирают конфигурацию и режимы работы систем, максимально адаптируя их для данного объекта.<br />
+                        <div class="service-d">
+                            <img src="images/services/service-4.png" class="service-image">
+                            <div class="service-title">Проектирование и Монтаж систем Видеонаблюдения</div>
+                            Мы занимается проектированием и установкой СКУД (систем контроля управления доступом). Мы оказываем весь спектр услуг – от разработки проекта с учетом конкретных требований до программирования и установки оборудования.<br />
+                            Установленные нами СКУД успешно эксплуатируются в офисных центрах и учебных заведениях, на производственных предприятиях и в финансовых учреждениях. Наличие систем контроля и управления доступом свидетельствует о качестве предприятия.<br />
+                            В каждом конкретном случае наши монтажники учитывают целый ряд факторов и подбирают конфигурацию и режимы работы систем, максимально адаптируя их для данного объекта.<br />
+                            <br />
+                            <button type="button" class="btn btn-black-big dialog">Заказать</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,22 +194,28 @@
                     <img src="images/services/service-5.png" class="service-image wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-title">Проектирование и Монтаж систем Охранно-Пожарной сигнализации</div>
                     <div class="service-description service-bottom">
-                        <div class="service-txt">
-                            Выполняя проектирование и монтаж систем охранно-пожарной сигнализации, компания «Глобал-АйДи» четко следует установленным нормативам и разрабатывает индивидуальные проекты для каждого объекта. Мы учитываем его площадь и планировку, горючесть строительных и отделочных материалов, техническое состояние электросетей, нагрузку и другие факторы.<br />
-                            Специалисты нашей компании предлагают как локальное размещение устройств обеспечения пожарной безопасности, так и комплексные решения с компоновкой оборудования и всех составных элементов ОПС. <br />
-                            Наша компания может выполнить проектирование и монтаж охранно-пожарной сигнализации любой сложности и конфигурации. 
+                        <div class="service-p">
+                            <button type="button" class="btn btn-black-big dialog">Заказать</button>
+                            <div class="service-txt">
+                                Выполняя проектирование и монтаж систем охранно-пожарной сигнализации, компания «Глобал-АйДи» четко следует установленным нормативам и разрабатывает индивидуальные проекты для каждого объекта. Мы учитываем его площадь и планировку, горючесть строительных и отделочных материалов, техническое состояние электросетей, нагрузку и другие факторы.<br />
+                                Специалисты нашей компании предлагают как локальное размещение устройств обеспечения пожарной безопасности, так и комплексные решения с компоновкой оборудования и всех составных элементов ОПС. <br />
+                                Наша компания может выполнить проектирование и монтаж охранно-пожарной сигнализации любой сложности и конфигурации. 
+                            </div>
+                            <img src="images/services/service-5.png" class="service-image">
+                            <div class="service-title">Проектирование и Монтаж систем Охранно-Пожарной сигнализации</div>
                         </div>
-                        <img src="images/services/service-5.png" class="service-image">
-                        <div class="service-title">Проектирование и Монтаж систем Охранно-Пожарной сигнализации</div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3 text-center service-item">
                     <img src="images/services/service-6.png" class="service-image wow fadeInUp" data-wow-delay="0.6s">
                     <div class="service-title">Монтаж антикражных систем<br /><br /></div>
                     <div class="service-description service-bottom">
-                        <div class="service-txt">
-                            Мы предлагаем монтаж антикражных систем для супермаркетов, брендовых бутиков, магазинов косметики, парфюмерии, одежды, обуви, и др. Системы отличаются по своим частотным характеристикам и технологическим особенностям, поэтому в каждом конкретном случае необходимо подобрать оборудование, которое максимально обеспечит защиту от краж и выноса товаров.<br />
-                            Наши специалисты рассчитывают расстояние между стойками, обеспечивают защиту системы от внешних помех и настраивают ее с учетом представленных товарных групп и других условий.
+                        <div class="service-p">
+                            <button type="button" class="btn btn-black-big dialog">Заказать</button>
+                            <div class="service-txt">
+                                Мы предлагаем монтаж антикражных систем для супермаркетов, брендовых бутиков, магазинов косметики, парфюмерии, одежды, обуви, и др. Системы отличаются по своим частотным характеристикам и технологическим особенностям, поэтому в каждом конкретном случае необходимо подобрать оборудование, которое максимально обеспечит защиту от краж и выноса товаров.<br />
+                                Наши специалисты рассчитывают расстояние между стойками, обеспечивают защиту системы от внешних помех и настраивают ее с учетом представленных товарных групп и других условий.
+                            </div>
                         </div>
                         <img src="images/services/service-6.png" class="service-image">
                         <div class="service-title">Монтаж антикражных систем<br /><br /></div>
@@ -206,9 +228,12 @@
                     <img src="images/services/service-7.png" class="service-image wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-title">Проектирование и Монтаж компьютерных сетей (СКС)</div>
                     <div class="service-description service-bottom">
-                        <div class="service-txt">
-                            В нашей компании заказы на проектирование компьютерных сетей выполняют профессионалы с большим опытом работы. С каждым годом предъявляются все более высокие требования к компьютерным сетям и их техническим возможностям, что также учитывают наши специалисты. Мы не предлагаем стандартных решений, а разрабатываем индивидуальные проекты для каждого заказчика.<br />
-                            Мы осуществляем проектирование и монтаж компьютерных сетей по конкурентным ценам, что позволяет обращаться к нашим услугам и компаниям со средним бюджетом.  Наши специалисты смогут предложить наиболее оптимальную схему СКС.
+                        <div class="service-p">
+                            <button type="button" class="btn btn-black-big dialog">Заказать</button>
+                            <div class="service-txt">
+                                В нашей компании заказы на проектирование компьютерных сетей выполняют профессионалы с большим опытом работы. С каждым годом предъявляются все более высокие требования к компьютерным сетям и их техническим возможностям, что также учитывают наши специалисты. Мы не предлагаем стандартных решений, а разрабатываем индивидуальные проекты для каждого заказчика.<br />
+                                Мы осуществляем проектирование и монтаж компьютерных сетей по конкурентным ценам, что позволяет обращаться к нашим услугам и компаниям со средним бюджетом.  Наши специалисты смогут предложить наиболее оптимальную схему СКС.
+                            </div>
                         </div>
                         <img src="images/services/service-7.png" class="service-image">
                         <div class="service-title">Проектирование и Монтаж компьютерных сетей (СКС)</div>
@@ -348,5 +373,37 @@
                 </div>
             </div>
         </footer>
+        <div class="modal fade" tabindex="-1" role="dialog" id="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">ЗАКАЗАТЬ ЗВОНОК</h4>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+                            <div class="form-group row">
+                                <label class="col-xs-3">Ваше имя:</label>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" placeholder="Введите имя">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-xs-3">Ваш телефон:</label>
+                                <div  class="col-xs-9">
+                                    <input type="text" class="form-control" placeholder="Введите телефон">
+                                </div>
+                            </div>
+                            <div class="form-group row text-right">
+                                <div  class="col-xs-12">
+                                    <button type="button" class="btn btn-blue">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
