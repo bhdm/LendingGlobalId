@@ -573,3 +573,6 @@ label{
     top: 10px;
     bottom: auto;
 }
+.owl-stage-outer{
+    max-height: 200px;
+}
