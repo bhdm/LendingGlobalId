@@ -576,3 +576,32 @@ label{
 .owl-stage-outer{
     max-height: 200px;
 }
+.btn-service-1{
+    background: url("../images/button/btn-1.png") no-repeat;
+}
+.btn-service-2{
+    background: url("../images/button/btn-2.png") no-repeat;
+}
+.btn-service-3{
+    background: url("../images/button/btn-3.png") no-repeat;
+}
+.btn-service-4{
+    background: url("../images/button/btn-4.png") no-repeat;
+}
+.btn-service-5{
+    background: url("../images/button/btn-5.png") no-repeat;
+}
+.btn-service-6{
+    background: url("../images/button/btn-6.png") no-repeat;
+}
+.btn-service-7{
+    background: url("../images/button/btn-7.png") no-repeat;
+}
+.btn-service{
+    width: 358px;
+    height: 295px;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
