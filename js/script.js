@@ -204,7 +204,7 @@ $(document).ready(function(){
     $('.flip-container div').flip(
         {
             speed: 500,
-            trigger: 'click',
+            trigger: 'hover',
             reverse: true
         }
     );
@@ -213,14 +213,14 @@ $(document).ready(function(){
       function(){
         $(this).css('background','#00a5d4');
           src = $(this).children('img').attr('data-src');
-          $(this).children('img').attr('data-src', $(this).children('img').attr('src'));
-          $(this).children('img').attr('src',src);
+          //$(this).children('img').attr('data-src', $(this).children('img').attr('src'));
+          //$(this).children('img').attr('src',src);
       },
         function(){
-            $(this).css('background','#000000');
+            $(this).css('background','rgba(0,0,0,0.7)');
             src = $(this).children('img').attr('data-src');
-            $(this).children('img').attr('data-src', $(this).children('img').attr('src'));
-            $(this).children('img').attr('src',src);
+            //$(this).children('img').attr('data-src', $(this).children('img').attr('src'));
+            //$(this).children('img').attr('src',src);
         }
     );
 
