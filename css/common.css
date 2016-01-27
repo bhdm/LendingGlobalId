@@ -275,7 +275,7 @@ footer form{
         padding-left: 30px !important;
     }
     .page-1-content{
-        top: 120px !important;
+        top: 130px !important;
         left: 0 !important;
         right: 0 !important;
         text-align: center !important;
@@ -291,7 +291,18 @@ footer form{
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .page-1-content{
-        top: 160px !important;
+        top: 270px !important;
+    }
+    .first-title div{
+        display: block;
+        text-align: center !important;
+        float: none !important;
+    }
+    .sdfg2{
+       display: none !important;
+    }
+    .sdfg{
+       margin-top: 20px !important;
     }
 }
 @media (max-width: 500px) {
@@ -340,7 +351,7 @@ a .btn-black{
     width: 100%;
     left: 50%;
     margin-left: -300px;
-    top: 250px;
+    top: 400px;
     text-align: center;
 }
 .page-1-content img {
@@ -362,6 +373,9 @@ a .btn-black{
     font-family: "HelveticaNeue-Thin";
     font-size: 40px;
     color: #FEFEFE;
+}
+.first-title div {
+    font-family: "HelveticaNeue-Thin";
 }
 p{
     font-size: 16px;
@@ -657,7 +671,7 @@ label{
 
     .owl-carousel-3{
         position: absolute;
-        top: 200px;
+        top: 160px;
     }
     .owl-carousel-3 .item{
         width:100px;
@@ -706,7 +720,7 @@ label{
 
     .owl-carousel-3{
         position: absolute;
-        top: 250px;
+        top: 200px;
     }
     .owl-carousel-3 .item{
         width:150px;
@@ -845,4 +859,9 @@ ul{
 .service-btn-title{
     font-size: 14px !important;
     color: #000;
+}
+.main-gerb{
+    width: 80px;
+    float: left;
+    margin-right: 20px;
 }
