@@ -877,3 +877,6 @@ ul{
     float: left;
     margin-right: 20px;
 }
+.modal-header{
+    border-bottom: 1px solid #555;
+}
