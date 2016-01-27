@@ -640,6 +640,7 @@ label{
     font-size: 9px;
     margin-top: -13px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -684,7 +685,9 @@ label{
         display: none !important;
     }
 }
-
+.service-btn-title-bootom-f{
+    color: #FEFEFE !important;
+}
 @media (min-width: 1001px) {
     .service-btn-title{
         position: absolute !important;
@@ -695,6 +698,10 @@ label{
         text-align: center;
         font-size: 19px;
     }
+    .service-btn-title-bootom{
+        top: 80px;
+    }
+
 
     .owl-carousel-3{
         position: absolute;

@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('.navbar-nav li').click(function(){
+    $('.navbar-nav li a').click(function(){
         $('.navbar-nav li.active').removeClass('active');
-        $(this).addClass('active');
+        $(this).parent().addClass('active');
     });
 
     $('.service-item').click(function(){
