@@ -19,24 +19,24 @@ $(document).ready(function(){
 
     $('.owl-carousel-1').owlCarousel({
         loop:true,
-        margin:10,
+        margin:15,
         nav:true,
         responsive:{
             0:{
-                items:4
+                items:2
             },
             600:{
-                items:6
+                items:4
             },
             1000:{
-                items:9
+                items:8
             }
         }
     });
 
     $('.owl-carousel-3').owlCarousel({
         loop:true,
-        margin:10,
+        margin:0,
         nav:false,
         responsive:{
             0:{
@@ -53,14 +53,14 @@ $(document).ready(function(){
 
     $('.owl-carousel-2').owlCarousel({
         loop:true,
-        margin:10,
-        nav:false,
+        margin:0,
+        nav:true,
         responsive:{
             0:{
-                items:4
+                items:2
             },
             600:{
-                items:6
+                items:4
             },
             1000:{
                 items:8

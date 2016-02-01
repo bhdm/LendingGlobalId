@@ -15,6 +15,7 @@
 
 body{
     overflow-x: hidden;
+
     /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 *{
@@ -32,7 +33,7 @@ h1,h2,.title,.sub-title, .service-title, .modal-title{
 }
 .content{
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1600px;
 }
 .title{
     text-transform: uppercase;
@@ -132,6 +133,7 @@ h1,h2,.title,.sub-title, .service-title, .modal-title{
 nav .container-fluid{
     padding: 0 !important;
 }
+
 .navbar-nav li{
     /*background: url("../images/menu-bg-1.png");*/
     background: rgba(255,255,255,0.7);
@@ -181,8 +183,9 @@ nav .container-fluid{
     padding-top: 60px;
 }
 #page-1 img{
-    max-width: 100%;
+    /*max-width: 100%;*/
 }
+
 #page-3{
     /*height: 400px;*/
     margin-bottom: 45px;
@@ -198,6 +201,7 @@ nav .container-fluid{
 #page-6{
     height: 404px;
     background: url("../images/slide-2-1.png") no-repeat;
+
     background-position:  top center;
     background-color: #1f2a2d;
     /*background-attachment: fixed;*/
@@ -228,8 +232,8 @@ footer form{
     max-width: 400px;
 }
 
-.certificate{
-    width: 180px;
+.owl-item.active div a .certificate{
+    width: 160px;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
@@ -275,6 +279,10 @@ footer form{
         border-right: 0 !important;
         background: #FEFEFE !important;
         padding-left: 30px !important;
+    }
+    .navbar-nav li a{
+        color: #333 !important;
+        border-bottom: 1px solid #EEE;
     }
     .page-1-content{
         top: 130px !important;
@@ -365,7 +373,7 @@ a .btn-black{
     width: 100%;
     left: 50%;
     margin-left: -300px;
-    top: 370px;
+    top: 435px;
     text-align: center;
 }
 .page-1-content img {
@@ -402,16 +410,16 @@ p{
 }
 .owl-prev{
     position: absolute;
-    top: 80px;
-    left: -45px;
+    top: 100px;
+    left: -30px;
     background: url("../images/ar-left.png");
     width: 20px;
     height: 37px;
 }
 .owl-next{
     position: absolute;
-    top: 80px;
-    right: -45px;
+    top: 100px;
+    right: -30px;
     background: url("../images/ar-right.png");
     width: 20px;
     height: 37px;
@@ -558,8 +566,9 @@ p{
     padding-top: 10px;
 }
 .owl-carousel-1{
-    width: 90%;
-    margin: 0 auto;
+    /*margin-right: 100px;*/
+    /*margin-left: 100px;*/
+    /*margin: 0 auto;*/
 }
 .modal-content{
     background: #3A3939;
@@ -666,8 +675,8 @@ label{
 }
 
 .owl-carousel-3 .item div{
-    line-height: 10px;
-    font-size: 11px;
+    line-height: 15px;
+    font-size: 13px;
     margin-top: -13px;
     text-transform: uppercase;
     cursor: pointer;
@@ -757,8 +766,25 @@ label{
         margin-top: 30px;
         cursor: pointer;
     }
-    .cd{
-        margin-left: 57px !important;
+    /*.cd{*/
+        /*margin-left: 57px !important;*/
+    /*}*/
+
+    img.dialog.icon-1 {
+        margin-top: 17px;
+        margin-left: 23px;
+    }
+    img.dialog.icon-4 {
+        margin-left: 46px;
+    }
+    img.dialog.cd.icon-5 {
+        margin-left: 40px;
+    }
+    img.dialog.cd.icon-6 {
+        margin-left: 40px;
+    }
+    img.dialog.cd.icon-7 {
+        margin-left: 40px;
     }
 }
 
@@ -787,9 +813,9 @@ label{
     position: relative;
     font-size: 13px;
 }
-.absolute-top .absolute-bottom{
+.txt{
     color: #253D55 !important;
-    background: #FEFEFE !important;
+    /*background: #5686AC !important;*/
     border: 1px solid #CCC !important;
 }
 
@@ -899,11 +925,42 @@ ul{
     max-width: 150px;
     /*height: 208px;*/
 }
+#slide-1{
+    max-width: 100%;
+}
 @media (min-width: 1350px) {
     .btn-service{
         font-size: 16px;
     }
+    #page-6{
+        -moz-background-size: 100%; /* Firefox 3.6+ */
+        -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 100%; /* Opera 9.6+ */
+        background-size: 100%; /* Современные браузеры */
+    }
+    #slide-1{
+        width: 1600px;
+    }
 }
 .dialog{
     cursor: pointer;
+}
+.thumbnail a>img, .thumbnail>img{
+    width: 100%;
+}
+.owl-item .item{
+    text-align: center;
+}
+/*.owl-carousel .owl-item img{*/
+    /*display: inline-block;*/
+/*}*/
+.owl-carousel-2 .owl-stage-outer {
+    margin-left: 12px;
+}
+#header{
+
+}
+
+.navbar-toggle {
+    background: #3C5979;
 }
