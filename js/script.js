@@ -63,7 +63,7 @@ $(document).ready(function(){
                 items:6
             },
             1000:{
-                items:9
+                items:8
             }
         }
     });
@@ -204,7 +204,7 @@ $(document).ready(function(){
     $('.flip-container div').flip(
         {
             speed: 500,
-            trigger: 'hover',
+            trigger: 'click',
             reverse: true
         }
     );
