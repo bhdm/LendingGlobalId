@@ -37,7 +37,7 @@ $(document).ready(function(){
     $('.owl-carousel-3').owlCarousel({
         loop:true,
         margin:10,
-        nav:true,
+        nav:false,
         responsive:{
             0:{
                 items:2
@@ -46,7 +46,7 @@ $(document).ready(function(){
                 items:4
             },
             1000:{
-                items:4
+                items:7
             }
         }
     });

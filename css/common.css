@@ -230,7 +230,9 @@ footer form{
 
 .certificate{
     width: 180px;
-    margin: 0 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
 }
 .brand{
     /*width: 120px;*/
@@ -616,6 +618,8 @@ label{
 }
 .owl-stage-outer{
     /*max-height: 200px;*/
+    padding: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 
@@ -663,7 +667,7 @@ label{
 
 .owl-carousel-3 .item div{
     line-height: 10px;
-    font-size: 9px;
+    font-size: 11px;
     margin-top: -13px;
     text-transform: uppercase;
     cursor: pointer;
@@ -735,8 +739,8 @@ label{
         top: 200px;
     }
     .owl-carousel-3 .item{
-        width:150px;
-        height:150px;
+        width:130px;
+        height:130px;
         display:inline-block;
         border-radius:75px;
         -moz-border-radius:75px;
@@ -889,9 +893,9 @@ ul{
     border-bottom: 1px solid #555;
 }
 .fancybox .review{
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 0px 5px 2px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 0px 5px 2px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
     max-width: 150px;
     /*height: 208px;*/
 }
@@ -899,4 +903,7 @@ ul{
     .btn-service{
         font-size: 16px;
     }
+}
+.dialog{
+    cursor: pointer;
 }
