@@ -683,8 +683,8 @@ label{
     cursor: pointer;
 }
 
-@media (max-width: 1000px) {
-    .service-btn-title{
+@media (max-width: 1200px) {
+    .service-btn-title {
         position: absolute !important;
         top: 70px;
         text-transform: uppercase;
@@ -697,6 +697,21 @@ label{
         background: rgba(255, 255, 255, 0.6);
         padding-bottom: 12px;
     }
+}
+@media (max-width: 1000px) {
+    /*.service-btn-title{*/
+        /*position: absolute !important;*/
+        /*top: 70px;*/
+        /*text-transform: uppercase;*/
+        /*!*font-weight: bold;*!*/
+        /*width: 100%;*/
+        /*text-align: center;*/
+        /*font-size: 19px;*/
+        /*padding-top: 20px;*/
+        /*display: block;*/
+        /*background: rgba(255, 255, 255, 0.6);*/
+        /*padding-bottom: 12px;*/
+    /*}*/
 
 
     .owl-carousel-3{
@@ -732,15 +747,31 @@ label{
 /*.service-btn-title-bootom-f{*/
     /*color: #FEFEFE !important;*/
 /*}*/
-@media (min-width: 1165px) {
-    .service-btn-title-bootom{
-        top: 80px !important;
-    }
-}
-@media (min-width: 1001px) {
-    .service-btn-title{
+/*@media (min-width: 1165px) {*/
+    /*.service-btn-title-bootom{*/
+        /*top: 80px !important;*/
+    /*}*/
+/*}*/
+@media (min-width: 1300px) {
+    .service-btn-title {
         position: absolute !important;
         top: 200px;
+        text-transform: uppercase;
+        /*font-weight: bold;*/
+        width: 100%;
+        text-align: center;
+        font-size: 20px !important;
+        color: #000;
+        padding-top: 20px;
+        display: block;
+        background: rgba(255, 255, 255, 0.6);
+        padding-bottom: 12px;
+    }
+}
+@media (min-width: 1200px) {
+    .service-btn-title{
+        position: absolute !important;
+        top: 150px;
         text-transform: uppercase;
         /*font-weight: bold;*/
         width: 100%;
@@ -974,4 +1005,7 @@ ul{
 
 .navbar-toggle {
     background: #3C5979;
+}
+.navbar-black-default {
+    margin-left: 15px;
 }

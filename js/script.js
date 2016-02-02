@@ -1,4 +1,15 @@
 $(document).ready(function(){
+
+
+    var cWidth = $('.content').eq(1).width();
+    var bWidth = $('body').width()-30;
+
+    if (bWidth-cWidth > 0){
+        var bb = (bWidth-cWidth)/2;
+        $('#menu').css('left',bb+'px');
+    }
+
+
     $('.navbar-nav li a').click(function(){
         $('.navbar-nav li.active').removeClass('active');
         $(this).parent().addClass('active');
