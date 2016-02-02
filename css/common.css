@@ -942,7 +942,7 @@ ul{
         width: 1600px;
     }
 }
-.dialog{
+.dialog, .dialog2{
     cursor: pointer;
 }
 .thumbnail a>img, .thumbnail>img{

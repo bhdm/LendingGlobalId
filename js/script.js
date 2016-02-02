@@ -200,6 +200,10 @@ $(document).ready(function(){
         $('#dialog').modal();
         return false;
     });
+    $('.dialog2').click(function(){
+        $('#dialog2').modal();
+        return false;
+    });
 
     $('.flip-container div').flip(
         {
