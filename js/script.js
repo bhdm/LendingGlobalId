@@ -6,7 +6,8 @@ $(document).ready(function(){
 
     if (bWidth-cWidth > 0){
         var bb = (bWidth-cWidth)/2;
-        $('#menu').css('left',bb+'px');
+        //$('#menu').css('left',bb+'px');
+        $('#menu').css('margin-left',bb+'px');
     }
 
 

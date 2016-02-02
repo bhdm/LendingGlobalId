@@ -35,6 +35,11 @@ h1,h2,.title,.sub-title, .service-title, .modal-title{
     margin: 0 auto;
     max-width: 1600px;
 }
+
+.content2{
+    /*margin: 0 auto;*/
+    max-width: 1600px;
+}
 .title{
     text-transform: uppercase;
     font-size: 35px;
