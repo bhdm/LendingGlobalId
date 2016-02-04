@@ -241,26 +241,35 @@ $(document).ready(function(){
     );
 
 
-    var slideHeight = $('#slide-1').height() - 270;
-    $('.header-left>div>img').css('width',(slideHeight/5)+'px');
-    $('.header-left>div').css('width',(slideHeight/5)+'px');
-    $('.header-left>div').css('height',(slideHeight/5)+'px');
-    $('.header-left-text').css('width',(slideHeight/5)+'px');
-    $('.header-left-text').css('height',(slideHeight/5)+'px');
-    $('.header-left-text>div').css('margin-left',(slideHeight/5)+'px');
-    $('.header-left-text').css('line-height',(slideHeight/5)+'px');
-    $('.header-left-text').css('font-size',(slideHeight/25)+'px');
+    function resize(){
+        var slideHeight = $('#slide-1').height() - 270;
+        $('.header-left>div>img').css('width',(slideHeight/5)+'px');
+        $('.header-left>div').css('width',(slideHeight/5)+'px');
+        $('.header-left>div').css('height',(slideHeight/5)+'px');
+        $('.header-left-text').css('width',(slideHeight/5)+'px');
+        $('.header-left-text').css('height',(slideHeight/5)+'px');
+        $('.header-left-text>div').css('margin-left',(slideHeight/5)+'px');
+        $('.header-left-text').css('line-height',(slideHeight/5)+'px');
+        $('.header-left-text').css('font-size',(slideHeight/25)+'px');
 
-    $('.header-right').css('right',(30)+'px');
-    $('.header-right>div>img').css('width',(slideHeight/5)+'px');
-    $('.header-right>div').css('width',(slideHeight/5)+'px');
-    $('.header-right>div').css('height',(slideHeight/5)+'px');
-    $('.header-right-text').css('width',(slideHeight/5)+'px');
-    $('.header-right-text').css('height',(slideHeight/5)+'px');
-    $('.header-right-text>div').css('margin-right',(slideHeight/5)+'px');
-    $('.header-right-text').css('line-height',(slideHeight/5)+'px');
-    $('.header-right-text').css('font-size',(slideHeight/25)+'px');
+        $('.header-right').css('right',(30)+'px');
+        $('.header-right>div>img').css('width',(slideHeight/5)+'px');
+        $('.header-right>div').css('width',(slideHeight/5)+'px');
+        $('.header-right>div').css('height',(slideHeight/5)+'px');
+        $('.header-right-text').css('width',(slideHeight/5)+'px');
+        $('.header-right-text').css('height',(slideHeight/5)+'px');
+        $('.header-right-text>div').css('margin-right',(slideHeight/5)+'px');
+        $('.header-right-text').css('line-height',(slideHeight/5)+'px');
+        $('.header-right-text').css('font-size',(slideHeight/25)+'px');
 
+        $('.header-left').css('display','block');
+        $('.header-right').css('display','block');
+    }
+
+    setTimeout(resize,500)
+    $( window ).resize(function() {
+        resize();
+    });
 
 
     $('.header-left div').hover(

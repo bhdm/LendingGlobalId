@@ -1021,6 +1021,7 @@ ul{
     z-index: 25;
     top: 120px;
     left: 30px;
+    display: none;
 }
 .header-left>div{
     height: 100px;
@@ -1054,6 +1055,7 @@ ul{
     z-index: 25;
     top: 120px;
     right: 130px;
+    display: none;
 }
 .header-right>div{
     height: 100px;
