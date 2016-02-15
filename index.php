@@ -1,5 +1,6 @@
 <?php
-    session_start();
+session_start();
+var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -578,8 +579,8 @@
 </div>
 
 <?php
-    if ($_SESSION['send'] == 1) {
-        $_SESSION['send'] = 0;
+if ($_SESSION['send'] == 1) {
+    $_SESSION['send'] = 0;
     ?>
     <div class="modal show" tabindex="-1" role="dialog" id="dialog2">
         <div class="modal-dialog">
