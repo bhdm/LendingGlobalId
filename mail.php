@@ -1,4 +1,9 @@
 <?php
+ini_set("display_errors",1);
+error_reporting(E_ALL);
+
+require 'vendor/PHPMailer/PHPMailerAutoload.php';
+
 session_start();
 
 if (isset($_POST['name']) && isset($_POST['phone'])){
@@ -20,12 +25,36 @@ if (isset($_POST['name']) && isset($_POST['phone'])){
         Телефон: '.$phone.'<br />';
     }
 
-    $headers= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+    $mail = new PHPMailer;
+//    $mail->SMTPDebug = 3;
+    $mail->isSMTP();
+    $mail->Host = 'mail.global-id.ru';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'GID\74global';
+    $mail->Password = '502C9F6E50053BAA23E49C3772D444EE';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 65125;
 
-//    $emailTo = 'info@global-id.ru';
-    $emailTo = 'tulupov.m@gmail.com';
-    mail($emailTo,$title,$txt, $headers);
+    $mail->setFrom('info@global-id.ru');
+    $mail->addAddress('tulupov.m@gmail.com');
+    $mail->addAddress('bhd.m@ya.ru');
+//    $mail->addAddress('info@global-id.ru');
+    $mail->isHTML(true);
+
+    $mail->Subject = 'Заявка с сайта';
+    $mail->Body    = $txt;
+    $mail->AltBody = strip_tags($txt);
+
+    if(!$mail->send()) {
+//        echo 'Message could not be sent.';
+//        echo 'Mailer Error: ' . $mail->ErrorInfo;
+//        echo '1';
+    } else {
+//        echo 'Message has been sent';
+//        echo '2';
+    }
+//    exit;
+
 
     $_SESSION['send'] = 1;
     $referer = $_SERVER["HTTP_REFERER"];
