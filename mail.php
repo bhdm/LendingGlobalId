@@ -36,9 +36,9 @@ if (isset($_POST['name']) && isset($_POST['phone'])){
     $mail->Port = 65125;
 
     $mail->setFrom('info@global-id.ru');
-    $mail->addAddress('tulupov.m@gmail.com');
-    $mail->addAddress('bhd.m@ya.ru');
-//    $mail->addAddress('info@global-id.ru');
+//    $mail->addAddress('tulupov.m@gmail.com');
+//    $mail->addAddress('bhd.m@ya.ru');
+    $mail->addAddress('info@global-id.ru');
     $mail->isHTML(true);
 
     $mail->Subject = 'Заявка с сайта';
