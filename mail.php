@@ -28,6 +28,7 @@ if (isset($_POST['name']) && isset($_POST['phone'])){
     $mail = new PHPMailer;
 //    $mail->SMTPDebug = 3;
     $mail->isSMTP();
+    $mail->CharSet = "UTF-8";
     $mail->Host = 'mail.global-id.ru';
     $mail->SMTPAuth = true;
     $mail->Username = 'GID\74global';
