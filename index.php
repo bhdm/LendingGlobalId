@@ -37,13 +37,13 @@
             var myMap = new ymaps.Map('map', {
                 // При инициализации карты, обязательно нужно указать
                 // ее центр и коэффициент масштабирования
-                center: [56.326944, 44.0075], // Нижний Новгород
+                center: [55.184253, 61.381497], // Победы, 198с1
                 zoom: 13
             });
 
             // Создание метки
             var myPlacemark = new ymaps.Placemark(
-                [56.326944, 44.0075],{
+                [55.184253, 61.381497],{
                     hintContent: 'ООО "Global-ID"'
                 }, {
                     iconImageHref: 'images/map-pin.png', // картинка иконки
@@ -85,7 +85,7 @@
             <img src="images/icon/cc-1.png">
             <div class="header-left-text">
                 <div style="margin-left: 100px">
-                    МОНТАЖ ШЛАНГБАУМОВ
+                    МОНТАЖ ШЛАГБАУМОВ
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
             <img src="images/icon/cc-1.png">
             <div class="header-right-text">
                 <div style="margin-right: 100px">
-                    МОНТАЖ ШЛАНГБАУМОВ
+                    МОНТАЖ ШЛАГБАУМОВ
                 </div>
             </div>
         </div>
@@ -167,7 +167,7 @@
     <!--<div class="owl-carousel owl-carousel-3 text-center hidden-xs" style="top: 360px;">-->
     <!--&lt;!&ndash;<div class="item dialog2">&ndash;&gt;-->
     <!--&lt;!&ndash;<img src="images/icon/icon-1-white.png" data-src="images/icon/icon-1.png" class="dialog2 icon-1">&ndash;&gt;-->
-    <!--&lt;!&ndash;<div>шлангбаумы</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div>шлагбаумы</div>&ndash;&gt;-->
     <!--&lt;!&ndash;</div>&ndash;&gt;-->
     <!--&lt;!&ndash;<div class="item dialog2">&ndash;&gt;-->
     <!--&lt;!&ndash;<img src="images/icon/icon-2-white.png" data-src="images/icon/icon-2.png" class="dialog2 icon-2" style="width: 50px;">&ndash;&gt;-->
@@ -263,7 +263,7 @@
             <div class="wow slideInLeft" data-wow-delay="0.1s">
                 <div class="btn-service btn-service-1 thumbnail">
                     <img src="images/button/btn-1.png">
-                    <div class="service-btn-title" style="">Монтаж шлангбаумов</div>
+                    <div class="service-btn-title" style="">Монтаж шлагбаумов</div>
                 </div>
                 <div class="btn-service btn-service-1 thumbnail absolute-top txt">
                             <span class="hidden-xs hidden-sm">
@@ -466,17 +466,17 @@
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-5 left-footer wow bounceInLeft" id="bottomline">
             <div class="media">
                 <div class="media-left">
-                    <img src="images/manager.png" title="Менеджер" alt="Менеджер">
+                    <img src="images/manager2.png" title="Менеджер" alt="Менеджер">
                 </div>
                 <div class="media-body">
                     <br />
                     <div class="manager black">
-                        Менеджер: Дедушева Инесса <br />
+                        Менеджер: Каратаев Рамис <br />
                         <span class="footer-phone">+7 <span class="blue">495</span> 229 45 15 </span>
                         доб.
                         <span>33</span>
                         <br />
-                        i.dedusheva@global-id.ru
+                        r.karataev@global-id.ru
                     </div>
                 </div>
             </div>
@@ -551,23 +551,23 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-xs-4 text-center">
-                        <img src="images/manager.png" title="Менеджер" alt="Менеджер" style="width: 100px">
+                        <img src="images/manager2.png" title="Менеджер" alt="Менеджер" style="width: 100px">
                     </div>
                     <div class="col-xs-5" style="line-height: 30px; color: #FEFEFE">
-                        <span style="font-weight: bold; color: #DDD">ДЕДУШЕВА ИЕССА ИВАНОВНА</span> <br />
+                        <span style="font-weight: bold; color: #DDD">КАРАТАЕВ РАМИС</span> <br />
                         <span style="font-weight: bold; color: #DDD">Телефон:</span> +7 (495) 229-45-15 <br />
-                        <span style="font-weight: bold; color: #DDD">E-mail:</span>  i.dedusheva@global-id.ru<br />
+                        <span style="font-weight: bold; color: #DDD">E-mail:</span>   r.karataev@global-id.ru<br />
                     </div>
                 </div>
                 <hr style="border-top-color: #555"/>
                 <div class="row">
                     <div class="col-xs-4 text-center">
-                        <img src="images/manager.png" title="Менеджер" alt="Менеджер" style="width: 100px">
+                        <img src="images/manager2.png" title="Менеджер" alt="Менеджер" style="width: 100px">
                     </div>
                     <div class="col-xs-5" style="line-height: 30px; color: #FEFEFE">
-                        <span style="font-weight: bold; color: #DDD">Дедушева Инесса Ивановна</span> <br />
+                        <span style="font-weight: bold; color: #DDD">КАРАТАЕВ РАМИС</span> <br />
                         <span style="font-weight: bold; color: #DDD">Телефон:</span> +7 (495) 229-45-15 <br />
-                        <span style="font-weight: bold; color: #DDD">E-mail:</span>  i.dedusheva@global-id.ru<br />
+                        <span style="font-weight: bold; color: #DDD">E-mail:</span>   r.karataev@global-id.ru<br />
                     </div>
                 </div>
                 <hr style="border-top-color: #555"/>
@@ -599,5 +599,35 @@ if ($_SESSION['send'] == 1) {
     <?php
 }
 ?>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter35988490 = new Ya.Metrika({
+                    id:35988490,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/35988490" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>
