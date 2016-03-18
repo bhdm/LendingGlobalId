@@ -157,54 +157,9 @@ $(document).ready(function(){
 
             }
         }
-
-        //var item = 1;
-        //setInterval(function(){
-        //    if (item == 1){
-        //        $('#ch-1').addClass('fadeInUp');
-        //        $('#ch-1').css('display','block');
-        //    }
-        //
-        //});
-
-        //if ($(this).scrollTop() > 140){
-        //    $('#ch-3').removeClass('fadeInUp');
-        //}else{
-        //    if ($(this).scrollTop() > 100){
-        //        $('#ch-2').removeClass('fadeInUp');
-        //        $('#ch-2').addClass('fadeOutUp');
-        //        $('#ch-2').css('display','none');
-        //        $('#ch-3').css('display','block');
-        //        $('#ch-3').addClass('fadeInUp');
-        //    }else{
-        //        if ($(this).scrollTop() > 60){
-        //            $('#ch-1').addClass('fadeOutUp');
-        //            $('#ch-2').css('display','block');
-        //            $('#ch-1').css('display','none');
-        //            $('#ch-2').addClass('fadeInUp');
-        //        }else{
-        //            if ($('#ch-1').css('display') == 'none'){
-        //                $('#ch-1').addClass('fadeInUp');
-        //                $('#ch-1').css('display','block');
-        //                $('#ch-2').addClass('fadeOutUp');
-        //                $('#ch-2').css('display','none');
-        //            }
-        //        }
-        //    }
-        //}
-
     });
 
-    //    if ( ($(this).scrollTop()+h) >= ($('footer').offset().top)) {
-    //        $("footer .row>div").css({visibility:"visible"});
-    //        $("footer .row>div").eq(0).addClass('animated bounceInLeft');
-    //        $("footer .row>div").eq(1).addClass('animated bounceInRight');
-    //    }
-    //
-    //    if ( ($(this).scrollTop()+h) >= $("#page-4").offset().top) {
-    //        $("#page-4 .row").eq(0).addClass('animated rotateIn');
-    //    }
-    //});
+
 
     new WOW().init();
 
@@ -213,7 +168,8 @@ $(document).ready(function(){
         return false;
     });
     $('.dialog2').click(function(){
-        $('#dialog2').modal();
+        var t = $(this).data('id')
+        $('#dialogc_'+t).modal();
         return false;
     });
 

@@ -81,7 +81,7 @@
     <!--</div>-->
     <img src="images/slide-1-5.png" id="slide-1">
     <div class="header-left">
-        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s" data-id="2">
             <img src="images/icon/cc-1.png">
             <div class="header-left-text">
                 <div style="margin-left: 100px">
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s" data-id="1">
             <img src="images/icon/cc-2.png">
             <div class="header-left-text">
                 <div style="margin-left: 100px">
@@ -97,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s" data-id="4">
             <img src="images/icon/cc-3.png">
             <div class="header-left-text">
                 <div style="margin-left: 100px">
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s" data-id="3">
             <img src="images/icon/cc-4.png">
             <div class="header-left-text">
                 <div style="margin-left: 100px">
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInLeft" data-wow-delay="1s" data-id="5">
             <img src="images/icon/cc-5.png">
             <div class="header-left-text">
                 <div style="margin-left: 100px">
@@ -123,7 +123,7 @@
         </div>
     </div>
     <div class="header-right">
-        <div class="dialog2 wow fadeInRight" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInRight" data-wow-delay="1s" data-id="2">
             <img src="images/icon/cc-1.png">
             <div class="header-right-text">
                 <div style="margin-right: 100px">
@@ -131,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="dialog2 wow fadeInRight" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInRight" data-wow-delay="1s" data-id="1">
             <img src="images/icon/cc-2.png">
             <div class="header-right-text">
                 <div style="margin-right: 100px">
@@ -139,7 +139,7 @@
                 </div>
             </div>
         </div>
-        <div class="dialog2 wow fadeInRight" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInRight" data-wow-delay="1s" data-id="4">
             <img src="images/icon/cc-3.png">
             <div class="header-right-text">
                 <div style="margin-right: 100px">
@@ -147,7 +147,7 @@
                 </div>
             </div>
         </div>
-        <div class="dialog2 wow fadeInRight" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInRight" data-wow-delay="1s" data-id="3">
             <img src="images/icon/cc-4.png">
             <div class="header-right-text">
                 <div style="margin-right: 100px">
@@ -155,7 +155,7 @@
                 </div>
             </div>
         </div>
-        <div class="dialog2 wow fadeInRight" data-wow-delay="1s">
+        <div class="dialog2 wow fadeInRight" data-wow-delay="1s" data-id="5">
             <img src="images/icon/cc-5.png">
             <div class="header-right-text">
                 <div style="margin-right: 100px">
@@ -541,6 +541,128 @@
         </div>
     </div>
 </div>
+<!-- ТУРНИКЕТЫ -->
+<div class="modal fade" tabindex="-1" role="dialog" id="dialogc_1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">КОНТАКТЫ МЕНЕДЖЕРА</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <img src="images/manager.png" title="Менеджер" alt="Менеджер" style="width: 100px">
+                    </div>
+                    <div class="col-xs-5" style="line-height: 30px; color: #FEFEFE">
+                        <span style="font-weight: bold; color: #DDD">АЛЕКСАНДР</span> <br />
+                        <span style="font-weight: bold; color: #DDD">Телефон:</span> +7 (919) 121-25-17 <br />
+                        <span style="font-weight: bold; color: #DDD">E-mail:</span> imikt@global-id.ru<br />
+                    </div>
+                </div>
+                <hr style="border-top-color: #555"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ШЛАГБАУМЫ -->
+<div class="modal fade" tabindex="-1" role="dialog" id="dialogc_2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">КОНТАКТЫ МЕНЕДЖЕРА</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <img src="images/manager.png" title="Менеджер" alt="Менеджер" style="width: 100px">
+                    </div>
+                    <div class="col-xs-5" style="line-height: 30px; color: #FEFEFE">
+                        <span style="font-weight: bold; color: #DDD">ОЛЕГ ВИТАЛЬЕВИЧ</span> <br />
+                        <span style="font-weight: bold; color: #DDD">Телефон:</span> +7 (922) 698-55-44<br />
+                        <span style="font-weight: bold; color: #DDD">E-mail:</span> esm74@global-id.ru<br />
+                    </div>
+                </div>
+                <hr style="border-top-color: #555"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- СКУД, сигнализация -->
+<div class="modal fade" tabindex="-1" role="dialog" id="dialogc_3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">КОНТАКТЫ МЕНЕДЖЕРА</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <img src="images/manager4.png" title="Менеджер" alt="Менеджер" style="width: 100px">
+                    </div>
+                    <div class="col-xs-5" style="line-height: 30px; color: #FEFEFE">
+                        <span style="font-weight: bold; color: #DDD">СУСЛОВ АЛЕКСЕЙ</span> <br />
+                        <span style="font-weight: bold; color: #DDD">Телефон:</span> +7 (905) 831-43-73<br />
+                        <span style="font-weight: bold; color: #DDD">E-mail:</span> avsprofi@global-id.ru<br />
+                    </div>
+                </div>
+                <hr style="border-top-color: #555"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ВИДЕОНАБЛЮДЕНИЕ, КОМПЬЮТЕРНЫЕ СЕТИ -->
+<div class="modal fade" tabindex="-1" role="dialog" id="dialogc_4">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">КОНТАКТЫ МЕНЕДЖЕРА</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <img src="images/manager3.png" title="Менеджер" alt="Менеджер" style="width: 100px">
+                    </div>
+                    <div class="col-xs-5" style="line-height: 30px; color: #FEFEFE">
+                        <span style="font-weight: bold; color: #DDD" class="text-uppercase">Амирова Надежда Рафаэлевна</span> <br />
+                        <span style="font-weight: bold; color: #DDD">Телефон:</span> +7 (351) 2337-137 <br />
+                        <span style="font-weight: bold; color: #DDD">E-mail:</span> elsys74@global-id.ru<br />
+                    </div>
+                </div>
+                <hr style="border-top-color: #555"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ДОМОФОНЫ, СИГНАЛИЗАЦИЯ  -->
+<div class="modal fade" tabindex="-1" role="dialog" id="dialogc_5">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">КОНТАКТЫ МЕНЕДЖЕРА</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <img src="images/manager.png" title="Менеджер" alt="Менеджер" style="width: 100px">
+                    </div>
+                    <div class="col-xs-5" style="line-height: 30px; color: #FEFEFE">
+                        <span style="font-weight: bold; color: #DDD" class="text-uppercase">Коновалова Наталья Юрьевна</span> <br />
+                        <span style="font-weight: bold; color: #DDD">Телефон:</span> +7 (351)723-00-62 <br />
+                        <span style="font-weight: bold; color: #DDD">E-mail:</span> natka_plus@global-id.ru <br />
+                    </div>
+                </div>
+                <hr style="border-top-color: #555"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- остальное -->
 <div class="modal fade" tabindex="-1" role="dialog" id="dialog2">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -549,17 +671,6 @@
                 <h4 class="modal-title">КОНТАКТЫ МЕНЕДЖЕРОВ</h4>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-xs-4 text-center">
-                        <img src="images/manager2.png" title="Менеджер" alt="Менеджер" style="width: 100px">
-                    </div>
-                    <div class="col-xs-5" style="line-height: 30px; color: #FEFEFE">
-                        <span style="font-weight: bold; color: #DDD">КАРАТАЕВ РАМИС</span> <br />
-                        <span style="font-weight: bold; color: #DDD">Телефон:</span> +7 (495) 229-45-15 <br />
-                        <span style="font-weight: bold; color: #DDD">E-mail:</span>   r.karataev@global-id.ru<br />
-                    </div>
-                </div>
-                <hr style="border-top-color: #555"/>
                 <div class="row">
                     <div class="col-xs-4 text-center">
                         <img src="images/manager2.png" title="Менеджер" alt="Менеджер" style="width: 100px">
